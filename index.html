@@ -1,32 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Alexander Scales</title>
-   <meta name="description" content="Portfolio of Alexander Scales: RowELO, a rowing analytics platform, a combat robot, and client websites.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexander Scales | Computer Science Student, University of Bristol</title>
+<meta name="description" content="Portfolio of Alexander Scales: RowELO, a rowing analytics platform, a combat robot, and client websites.">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1 id="alexander-scales">Alexander Scales</h1>
-<p>First year Computer Science student at the University of Bristol.</p>
-[<a href="https://github.com/AlecScales">GitHub</a>] · [<a href="https://www.linkedin.com/in/alexander-scales-7064b7229/">LinkedIn</a>] · [<a href="mailto:alecscales@outlook.com">Email</a>] · [<a href="AlexanderScalesCV.pdf" target="_blank">Resume</a>]
-<h2 id="projects">Projects</h2>
-<p><strong>RowELO: ELO Rankings for British Junior Rowing</strong></p>
-<p>An automated pipeline that scrapes regatta results, cleans and stores them in a MySQL database, calculates Elo ratings for clubs, and publishes the results as a static website with league tables and interactive charts.</p>
-<ul>
-<li>Combines results from three regattas into one platform: 228 races across 18 events and 74 clubs over five seasons.</li>
-<li>Built with Python, MySQL, asynchronous scrapers, HTML, CSS and JavaScript.</li>
-</ul>
-<p>[<a href="https://alecscales.github.io/rowelo/">Live Demo</a>] · [<a href="https://github.com/AlecScales/rowelo">GitHub Repo</a>]</p>
-<img src="https://github.com/AlecScales/rowelo/blob/03e58f17967a692b4c4bbd39b6ebd38daf3c35eb/docs/clubPage.png?raw=true" alt="RowELO Screenshot">
-<p><strong>150g Antweight Combat Robot</strong></p>
-<p>A robot I’m designing for a UK antweight competition. It has a flipper weapon, and the challenge is fitting a strong mechanism into a strict 150g weight limit.</p>
-<p><strong>Client Websites</strong></p>
-<p>Three websites I designed and built after gathering requirements from each organisation:</p>
-<ul>
-<li><a href="https://www.monmouthcastlemuseum.org/">Monmouth Castle and Regimental Museum</a></li>
-<li><a href="https://www.madeatthehut.co.uk/">Made at the Hut</a></li>
-<li><a href="https://www.englishbicknorlhg.co.uk/">English Bicknor Local History Group</a></li>
-</ul>
-<h2>About</h2>
-<p>I’m a first-year BSc Computer Science student at the University of Bristol, studying Imperative & Functional Programming, Maths for Computer Science, Computer Architecture and Software Tools. I did A-levels in Computer Science, Maths, Further Maths and History, and won the USW Cyber Security Challenge.</p>
-<p>Before University, I volunteered as a hardware diagnostician at Repair Café Wales, where I find faults in computers and electronics and explain them to people without a technical background. In my spare time I work on hobby electronics, programming and combat robotics.</p>
+<header>
+  <h1>Alexander Scales</h1>
+  <p class="intro">First-year Computer Science student at the University of Bristol.</p>
+  <nav aria-label="Links">
+    <a href="https://github.com/AlecScales">GitHub</a>
+    <a href="https://www.linkedin.com/in/alexander-scales-7064b7229/">LinkedIn</a>
+    <a href="mailto:alecscales@outlook.com">Email</a>
+    <a href="AlexanderScalesCV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+  </nav>
+</header>
+
+<main>
+  <section id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+
+    <article class="project">
+      <h3>RowELO: Elo Rankings for British Junior Rowing</h3>
+      <p>An automated pipeline that scrapes regatta results, cleans and stores them in a MySQL database, calculates Elo ratings for clubs, and publishes the results as a static website with league tables and interactive charts.</p>
+      <ul>
+        <li>Combines results from three regattas into one platform: 228 races across 18 events and 74 clubs over five seasons.</li>
+        <li>Built with Python, MySQL, asynchronous scrapers, HTML, CSS and JavaScript.</li>
+      </ul>
+      <p class="links">
+        <a href="https://alecscales.github.io/rowelo/">Live demo</a>
+        <a href="https://github.com/AlecScales/rowelo">GitHub repo</a>
+      </p>
+      <figure>
+        <img src="https://github.com/AlecScales/rowelo/blob/03e58f17967a692b4c4bbd39b6ebd38daf3c35eb/docs/clubPage.png?raw=true" alt="Screenshot of a club page on RowELO" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="project">
+      <h3>150g Antweight Combat Robot</h3>
+      <p>A robot I’m designing for a UK antweight competition. It has a flipper weapon, and the challenge is fitting a strong mechanism into a strict 150g weight limit.</p>
+      <!-- Add a photo or CAD render when you have one:
+      <figure><img src="images/robot.jpg" alt="Describe the photo here" loading="lazy"></figure> -->
+    </article>
+
+    <article class="project">
+      <h3>Client Websites</h3>
+      <p>Three websites I designed and built after gathering requirements from each organisation:</p>
+      <ul>
+        <li><a href="https://www.monmouthcastlemuseum.org/">Monmouth Castle and Regimental Museum</a></li>
+        <li><a href="https://www.madeatthehut.co.uk/">Made at the Hut</a></li>
+        <li><a href="https://www.englishbicknorlhg.co.uk/">English Bicknor Local History Group</a></li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title">About</h2>
+    <p>I’m a first-year BSc Computer Science student at the University of Bristol, studying Imperative &amp; Functional Programming, Maths for Computer Science, Computer Architecture and Software Tools. I did A-levels in Computer Science, Maths, Further Maths and History, and won the USW Cyber Security Challenge.</p>
+    <p>Before university, I volunteered as a hardware diagnostician at Repair Café Wales, where I find faults in computers and electronics and explain them to people without a technical background. In my spare time I work on hobby electronics, programming and combat robotics.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Contact: <a href="mailto:alecscales@outlook.com">alecscales@outlook.com</a></p>
+</footer>
 </body>
+</html>
